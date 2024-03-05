@@ -3,6 +3,10 @@ Number.prototype.entre = function (inicio, fim) {
 }
 
 const imprimirResultado = function (nota) {
+    if (isNaN(nota)){
+        console.log('Por favor, insira um número.')
+        return
+    }
     if (nota.entre(9, 10)) {
         console.log('Quadro de honra!')
     }
@@ -26,6 +30,7 @@ imprimirResultado(7)
 imprimirResultado(4.5)
 imprimirResultado(3.2)
 imprimirResultado(-1)
+imprimirResultado('Taksjfa')
 
 /* 
 A utilização de if -- else if será realizada para cada bloco, caso o último não seja TRUE

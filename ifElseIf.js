@@ -2,6 +2,11 @@ Number.prototype.entre = function (inicio, fim) {
     return this >= inicio && this <= fim
 }
 
+/*
+Atualizando o código com melhoria.
+Testado uma string e retornou o erro do VS. Para isso, utilizei novamente o isNan.
+O problema foi corrigido e retornará a mensagem de erro, caso o usuário informe TIPO diferente de number.
+*/
 const imprimirResultado = function (nota) {
     if (isNaN(nota)){
         console.log('Por favor, insira um número.')
@@ -31,6 +36,7 @@ imprimirResultado(4.5)
 imprimirResultado(3.2)
 imprimirResultado(-1)
 imprimirResultado('Taksjfa')
+imprimirResultado(undefined)
 
 /* 
 A utilização de if -- else if será realizada para cada bloco, caso o último não seja TRUE

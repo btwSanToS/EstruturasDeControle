@@ -25,3 +25,9 @@ const frutas = ['abacaxi', 'manga', 'kiwi', 'pêssego'];
 for (let f = 0; f < frutas.length; f++) {
     console.log(`Fruta = ${frutas[f]}`);
 }
+
+const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maior', 'Junho',
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+for (let m = 1; m < meses.length; m++) {
+    console.log(`Os meses do ano são: ${meses[m]}`)
+}
